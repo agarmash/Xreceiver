@@ -1,4 +1,4 @@
-Xreciever13.o: ../Xreciever13.c \
+Xreceiver13.o: ../Xreceiver13.c \
   c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h \
   c:/winavr-20100110/lib/gcc/../../avr/include/avr/sfr_defs.h \
   c:/winavr-20100110/lib/gcc/../../avr/include/inttypes.h \

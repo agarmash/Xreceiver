@@ -1,11 +1,11 @@
 ###############################################################################
-# Makefile for the project Xreciever13
+# Makefile for the project Xreceiver13
 ###############################################################################
 
 ## General Flags
-PROJECT = Xreciever13
+PROJECT = Xreceiver13
 MCU = attiny13a
-TARGET = Xreciever13.elf
+TARGET = Xreceiver13.elf
 CC = avr-gcc
 
 ## Options common to compile, link and assembly rules
@@ -23,7 +23,7 @@ ASMFLAGS += -x assembler-with-cpp -Wa,-gdwarf2
 
 ## Linker flags
 LDFLAGS = $(COMMON)
-LDFLAGS +=  -Wl,-Map=Xreciever13.map
+LDFLAGS +=  -Wl,-Map=Xreceiver13.map
 
 
 ## Intel Hex file production flags
@@ -35,16 +35,16 @@ HEX_EEPROM_FLAGS += --change-section-lma .eeprom=0 --no-change-warnings
 
 
 ## Objects that must be built in order to link
-OBJECTS = Xreciever13.o 
+OBJECTS = Xreceiver13.o 
 
 ## Objects explicitly added by the user
 LINKONLYOBJECTS = 
 
 ## Build
-all: $(TARGET) Xreciever13.hex Xreciever13.eep Xreciever13.lss size
+all: $(TARGET) Xreceiver13.hex Xreceiver13.eep Xreceiver13.lss size
 
 ## Compile
-Xreciever13.o: ../Xreciever13.c
+Xreceiver13.o: ../Xreceiver13.c
 	$(CC) $(INCLUDES) $(CFLAGS) -c  $<
 
 ##Link
@@ -67,7 +67,7 @@ size: ${TARGET}
 ## Clean target
 .PHONY: clean
 clean:
-	-rm -rf $(OBJECTS) Xreciever13.elf dep/* Xreciever13.hex Xreciever13.eep Xreciever13.lss Xreciever13.map
+	-rm -rf $(OBJECTS) Xreceiver13.elf dep/* Xreceiver13.hex Xreceiver13.eep Xreceiver13.lss Xreceiver13.map
 
 
 ## Other dependencies

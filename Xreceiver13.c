@@ -19,7 +19,7 @@
 
 void sendToRFModule (unsigned char received)
 {
-    char prev = 0xFF; //don't remember why I used char for this, but it works
+    char prev = 0xFF;
     DATA_PORT &= ~(1<<DATA); //set data line 0 to begin data transmission
     for(int i = 0; i < 11; i++) //first 2 bytes of sending data are always 0, the rest 8 are the actual command
     {
@@ -39,7 +39,7 @@ void sendToRFModule (unsigned char received)
 			{
                 DATA_PORT &= ~(1<<DATA); //set 0
 			}
-	    	received = received << 1; shift data 1 bit left so we can get next bit during next iteration
+	    	received = received << 1; //shift data 1 bit left so we can get next bit during next iteration
 		}
 
         while (prev == (CLOCK_PIN & (1<<CLOCK))){} //detects upward edge of clock 

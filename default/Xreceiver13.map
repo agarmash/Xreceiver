@@ -3,13 +3,13 @@ Archive member included because of file (symbol)
 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_exit.o)
                               c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn13a.o (exit)
 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_clear_bss.o)
-                              Xreciever13.o (__do_clear_bss)
+                              Xreceiver13.o (__do_clear_bss)
 
 Allocating common symbols
 Common symbol       size              file
 
-i                   0x2               Xreciever13.o
-prev                0x1               Xreciever13.o
+i                   0x2               Xreceiver13.o
+prev                0x1               Xreceiver13.o
 
 Memory Configuration
 
@@ -25,7 +25,7 @@ signature        0x00840000         0x00000400         rw !x
 Linker script and memory map
 
 LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn13a.o
-LOAD Xreciever13.o
+LOAD Xreceiver13.o
 LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a
 LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25\libc.a
 LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a
@@ -184,7 +184,7 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a
                 0x00000030                __vector_9
                 0x00000030                __vector_2
                 0x00000030                __vector_8
- .text          0x00000032      0x124 Xreciever13.o
+ .text          0x00000032      0x124 Xreceiver13.o
                 0x00000032                sendToRFModule
                 0x0000009c                main
  .text          0x00000156        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_exit.o)
@@ -224,7 +224,7 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn13a.o
- .data          0x00800060        0x0 Xreciever13.o
+ .data          0x00800060        0x0 Xreceiver13.o
  .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_exit.o)
  .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_clear_bss.o)
  *(.data*)
@@ -239,12 +239,12 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a
                 0x00800060                PROVIDE (__bss_start, .)
  *(.bss)
  .bss           0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr25/crttn13a.o
- .bss           0x00800060        0x0 Xreciever13.o
+ .bss           0x00800060        0x0 Xreceiver13.o
  .bss           0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_exit.o)
  .bss           0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a(_clear_bss.o)
  *(.bss*)
  *(COMMON)
- COMMON         0x00800060        0x3 Xreciever13.o
+ COMMON         0x00800060        0x3 Xreceiver13.o
                 0x00800060                i
                 0x00800062                prev
                 0x00800063                PROVIDE (__bss_end, .)
@@ -310,44 +310,44 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr25\libgcc.a
 .debug_aranges  0x00000000       0x20
  *(.debug_aranges)
  .debug_aranges
-                0x00000000       0x20 Xreciever13.o
+                0x00000000       0x20 Xreceiver13.o
 
 .debug_pubnames
                 0x00000000       0x3d
  *(.debug_pubnames)
  .debug_pubnames
-                0x00000000       0x3d Xreciever13.o
+                0x00000000       0x3d Xreceiver13.o
 
 .debug_info     0x00000000      0x2db
  *(.debug_info)
- .debug_info    0x00000000      0x2db Xreciever13.o
+ .debug_info    0x00000000      0x2db Xreceiver13.o
  *(.gnu.linkonce.wi.*)
 
 .debug_abbrev   0x00000000      0x152
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x152 Xreciever13.o
+ .debug_abbrev  0x00000000      0x152 Xreceiver13.o
 
 .debug_line     0x00000000      0x285
  *(.debug_line)
- .debug_line    0x00000000      0x285 Xreciever13.o
+ .debug_line    0x00000000      0x285 Xreceiver13.o
 
 .debug_frame    0x00000000       0x30
  *(.debug_frame)
- .debug_frame   0x00000000       0x30 Xreciever13.o
+ .debug_frame   0x00000000       0x30 Xreceiver13.o
 
 .debug_str      0x00000000       0xe5
  *(.debug_str)
- .debug_str     0x00000000       0xe5 Xreciever13.o
+ .debug_str     0x00000000       0xe5 Xreceiver13.o
                                 0x11e (size before relaxing)
 
 .debug_loc      0x00000000      0x186
  *(.debug_loc)
- .debug_loc     0x00000000      0x186 Xreciever13.o
+ .debug_loc     0x00000000      0x186 Xreceiver13.o
 
 .debug_macinfo
  *(.debug_macinfo)
-OUTPUT(Xreciever13.elf elf32-avr)
+OUTPUT(Xreceiver13.elf elf32-avr)
 LOAD linker stubs
 
 .debug_ranges   0x00000000       0xd8
- .debug_ranges  0x00000000       0xd8 Xreciever13.o
+ .debug_ranges  0x00000000       0xd8 Xreceiver13.o
